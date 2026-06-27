@@ -1,0 +1,228 @@
+/* ============================================================
+   File Handling System — Custom Styles
+   Theme: Modern Dark
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── Base & Background ────────────────────────────────────── */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+.stApp {
+    background-color: #0f0f17;
+    color: #e0dff0;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────── */
+[data-testid="stSidebar"] {
+    background-color: #13131f;
+    border-right: 1px solid #1e1e30;
+}
+
+.sidebar-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0.5rem 0 0.2rem;
+    letter-spacing: -0.01em;
+}
+
+.sidebar-sub {
+    font-size: 0.8rem;
+    color: #6e6a85;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-count {
+    font-size: 0.82rem;
+    color: #7c78a0;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 0.4rem 0;
+}
+
+/* Sidebar radio buttons */
+[data-testid="stSidebar"] .stRadio > div {
+    gap: 0.3rem;
+}
+
+[data-testid="stSidebar"] .stRadio label {
+    background: #1a1a2e;
+    border: 1px solid #23233a;
+    border-radius: 10px;
+    padding: 0.55rem 1rem;
+    color: #a09cb8;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    width: 100%;
+}
+
+[data-testid="stSidebar"] .stRadio label:hover {
+    border-color: #6c63ff;
+    color: #ffffff;
+}
+
+/* ── Main Titles ──────────────────────────────────────────── */
+.main-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.main-sub {
+    font-size: 0.9rem;
+    color: #6e6a85;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+}
+
+/* ── Input Fields ─────────────────────────────────────────── */
+.stTextInput > div > div > input {
+    background: #1a1a2e !important;
+    border: 1px solid #2a2a42 !important;
+    border-radius: 10px !important;
+    color: #e0dff0 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.88rem !important;
+    padding: 0.6rem 1rem !important;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: #6c63ff !important;
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2) !important;
+}
+
+.stTextArea > div > div > textarea {
+    background: #1a1a2e !important;
+    border: 1px solid #2a2a42 !important;
+    border-radius: 10px !important;
+    color: #e0dff0 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+}
+
+.stTextArea > div > div > textarea:focus {
+    border-color: #6c63ff !important;
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2) !important;
+}
+
+/* ── Select Box ───────────────────────────────────────────── */
+.stSelectbox > div > div {
+    background: #1a1a2e !important;
+    border: 1px solid #2a2a42 !important;
+    border-radius: 10px !important;
+    color: #e0dff0 !important;
+}
+
+/* ── Labels ───────────────────────────────────────────────── */
+.stTextInput label,
+.stTextArea label,
+.stSelectbox label,
+.stRadio label {
+    color: #9d97b8 !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+.stButton > button {
+    background: #6c63ff !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    padding: 0.6rem 1.6rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.stButton > button:hover {
+    background: #7b73ff !important;
+    box-shadow: 0 4px 18px rgba(108, 99, 255, 0.4) !important;
+    transform: translateY(-1px) !important;
+}
+
+.stButton > button:active {
+    transform: translateY(0) !important;
+}
+
+/* ── Radio (inline update options) ───────────────────────── */
+.stRadio > div {
+    gap: 0.5rem !important;
+}
+
+/* ── File Content Box ─────────────────────────────────────── */
+.file-box {
+    background: #0a0a12;
+    border: 1px solid #1e1e30;
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: #c8c4e0;
+    line-height: 1.75;
+    white-space: pre-wrap;
+    word-break: break-all;
+    max-height: 320px;
+    overflow-y: auto;
+    margin-top: 0.75rem;
+}
+
+/* Scrollbar inside file-box */
+.file-box::-webkit-scrollbar {
+    width: 5px;
+}
+.file-box::-webkit-scrollbar-track {
+    background: #13131f;
+}
+.file-box::-webkit-scrollbar-thumb {
+    background: #3a3a55;
+    border-radius: 10px;
+}
+
+/* ── File Meta Info ───────────────────────────────────────── */
+.file-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    color: #6e6a85;
+    margin-top: 0.6rem;
+    padding: 0.4rem 0;
+}
+
+/* ── Divider ──────────────────────────────────────────────── */
+hr {
+    border: none !important;
+    border-top: 1px solid #1e1e30 !important;
+    margin: 1rem 0 !important;
+}
+
+/* ── Alerts ───────────────────────────────────────────────── */
+.stSuccess, .stError, .stInfo, .stWarning {
+    border-radius: 10px !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* ── Checkbox ─────────────────────────────────────────────── */
+.stCheckbox label {
+    color: #a09cb8 !important;
+    font-size: 0.88rem !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
