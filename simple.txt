@@ -1,0 +1,37 @@
+=========================================
+        FILE HANDLING PROJECT
+=========================================
+
+Name: Amber Arya
+Project: File Handling System
+Language: Python
+Framework: Streamlit
+
+-----------------------------------------
+Sample Data
+-----------------------------------------
+
+Hello, World!
+
+This is a sample text file for testing the
+File Handling application.
+
+Features to test:
+1. Create File
+2. Read File
+3. Update File
+4. Delete File
+5. List Files
+
+-----------------------------------------
+Notes
+-----------------------------------------
+
+- Python makes file handling simple.
+- Always close files after use.
+- Handle exceptions to avoid errors.
+- Store important data safely.
+
+=========================================
+        END OF FILE
+=========================================
